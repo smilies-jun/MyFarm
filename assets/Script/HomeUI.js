@@ -27,11 +27,6 @@ cc.Class({
         //         this._bar = value;
         //     }
         // },
-
-        itemPlant: {
-            default:null,
-            type:cc.Prefab
-        },
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -39,30 +34,46 @@ cc.Class({
     // onLoad () {},
 
     start () {
-        this.creatItem();
+
     },
 
-    creatItem (){
-        var self = this;
-
-        let bg = cc.find("bg", this.node);
-        let Prefab = cc.instantiate(self.itemPlant);
-        let PrefabPlant_xs = cc.find("itemdemo-xs", Prefab);
-        let PrefabPlant_md = cc.find("itemdemo-md", Prefab);
-        let PrefabPlant_lg = cc.find("itemdemo-lg", Prefab);
-        let PrefabPlant_tip = cc.find("New Node/reap", Prefab);
-
-        cc.loader.loadRes("Farm/water", cc.SpriteFrame, function(err, spriteFrame) {
-            obj.getComponent(cc.Sprite).spriteFrame = spriteFrame;
-          });
-          obj.active = true;
-
-         //小树苗
-        PrefabPlant_xs.active = true;
-        PrefabPlant_md.active = false;
-        PrefabPlant_lg.active = false;
-        bg.addChild(Prefab);
+    GoToPlantOne(e){
+        let type = e.currentTarget._name.slice(0); //得到这个节点的名字
+        switch(type) {
+            case 'land_one':
+                console.log("111");
+                break;
+            case 'land_two':
+                console.log("2");
+                break;
+            case 'land_three':
+                console.log("3");
+                break;
+            case 'land_four':
+                console.log("4");
+                break;
+            case 'land_five':
+                console.log("5");
+                break;
+            case 'land_six':
+                console.log("6");
+                break;
+            case 'land_seven':
+                console.log("7");
+                break;
+            case 'land_eight':
+                console.log("8");
+                break;
+            case 'land_nine':
+                console.log("9");
+                break;
+            case 'wooden':
+                console.log("开垦");
+                break;
+            default:
+            console.log("1010");
+            break
+        }
     },
-
     // update (dt) {},
 });
