@@ -39,9 +39,10 @@ cc.Class({
 
     GoToPlantOne(e){
         let type = e.currentTarget._name.slice(0); //得到这个节点的名字
+        // console.log("-----"+type);
         switch(type) {
             case 'land_one':
-                console.log("111");
+                cc.director.loadScene("myland");
                 break;
             case 'land_two':
                 console.log("2");

@@ -2,32 +2,39 @@
   "__type__": "cc.AnimationClip",
   "_name": "UpAndDown",
   "_objFlags": 0,
-  "_rawFiles": null,
-  "_duration": 2,
+  "_native": "",
+  "_duration": 2.0166666666666666,
   "sample": 60,
   "speed": 1,
-  "wrapMode": 2,
+  "wrapMode": "2",
   "curveData": {
-    "paths": {
-      "reap": {
-        "props": {
-          "y": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 1,
-              "value": 10
-            },
-            {
-              "frame": 2,
-              "value": 0
-            }
-          ]
+    "props": {
+      "y": [
+        {
+          "frame": 0,
+          "value": -338
+        },
+        {
+          "frame": 0.9833333333333333,
+          "value": -328
+        },
+        {
+          "frame": 2.0166666666666666,
+          "value": -338
         }
-      }
+      ]
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 2,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 2,
+      "func": "",
+      "params": []
+    }
+  ]
 }
